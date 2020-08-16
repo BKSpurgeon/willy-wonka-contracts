@@ -1,0 +1,28 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title> Apple Contract in the Style of Willy Wonka </title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+</head>
+
+<body>
+
+<div style=”font-size: 200px”>
+
+	<% count = 400 %> 
+    <% out_file = File.open('apple_contract.txt', 'w') %>
+
+    <% IO.foreach('your_file_name') do |line| %>
+	    <p style=”font-size: <% count * 0.6 %> ”> <%= line %>  </p>
+    <% end  %>
+
+    <% out_file.close %>
+</div>
+
+</body>
+</html>
+
