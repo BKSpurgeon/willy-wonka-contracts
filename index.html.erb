@@ -11,16 +11,12 @@
 
 <body>
 
-<div style=”font-size: 200px”>
+<div style="font-size: 30px;">
+    <% File.foreach("apple_contract.txt").with_index do |line, line_no| %>       
+            <% font_size = (0.85 ** (line_no + 1)) * 100 %>       
+            <p style="font-size: <%= "%.5f" % font_size %>%;"> <%= line %>  </p>
 
-	<% count = 400 %> 
-    <% out_file = File.open('apple_contract.txt', 'w') %>
-
-    <% IO.foreach('your_file_name') do |line| %>
-	    <p style=”font-size: <% count * 0.6 %> ”> <%= line %>  </p>
-    <% end  %>
-
-    <% out_file.close %>
+    <% end %>    
 </div>
 
 </body>
