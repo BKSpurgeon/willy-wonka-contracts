@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<h1> Apple's Willy Wonka Agreement with you </h1>
 
 <div style="font-size: 30px;">
     <% File.foreach("apple_contract.txt").with_index do |line, line_no| %>       
@@ -17,6 +18,8 @@
             <p style="font-size: <%= "%.5f" % font_size %>%;"> <%= line %>  </p>
 
     <% end %>    
+
+<button> I AGREE </button>
 </div>
 
 </body>
