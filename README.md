@@ -13,4 +13,14 @@ You may clone and host where ever you like.
 This this proves popular, perhaps I may package it in a gem.
 
 
+### How it works
 
+We have a ruby script. This looks at a html.erb file (which in turns calls a text file which contains the text associate with a contract) to produce another html file. This is the final output we are seeking.
+
+### How to use
+
+1. Make sure you have ruby installed.
+
+2. Run `ruby contract_generation_script.rb`
+
+3. The output should be contained in the `index.html` file. You can upload the file wherever you like.
